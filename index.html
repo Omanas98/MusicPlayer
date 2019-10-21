@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="normalize.css">
+            <link rel="stylesheet" href="FA/css/all.min.css">
+            <link rel="stylesheet" href="style.css">
+            <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+            <title></title>
+      </head>
+
+      <body>
+
+            <section class="header">
+                  <article>
+                        <i class="fas fa-chevron-left"></i>
+                  </article>
+                  <article>
+                        <h1>
+                              Playlist - Name
+                        </h1>
+                  </article> 
+                  <article>
+                        <i class="fas fa-ellipsis-v"></i>
+                  </article>
+            </section>
+            <main> 
+                  <section class="allSongs thunder">
+                        <section class="playlist" value="PLAY" value="PAUSE" onclick="play()">
+                              <audio id="audio" src="music/Imagine-Dragons_Thunder.mp3" ></audio>
+                              <article "song_img">
+                                    <img id="myImage" class ="song_img" src="images/ImagineDragonAlbumCover.jpg">
+                              </article>
+                              <article>
+                                    <h4>Imagine Dragon<br>Thunder</h2>
+                              </article>
+                              <article>
+                                    <i class="fas fa-play-circle"></i>
+                              </article>
+                        </section>
+
+                        <section class="playlist linkin" value="PLAY" value="PAUSE" onclick="play()">
+                              <audio id="audio" src="music/Linkin-Park_In-the-End.mp3" ></audio>
+                              <article "song_img">
+                                    <img id="myImage" class ="song_img" src="images/LinkinParkAlbumCover.jpg">
+                              </article>
+                              <article>
+                                    <h4>Linkin Park<br>In The End</h2>
+                              </article>
+                              <article>
+                                    <i class="fas fa-play-circle"></i>
+                              </article>
+                        </section>
+
+
+
+                        <section class="playlist homicide" value="PLAY" value="PAUSE" onclick="play()">
+                              <audio id="audio" src="music/Logic%20ft%20Eminem%20-%20Homicide%20%5BLyrics%5D.mp3" ></audio>
+                              <article "song_img">
+                                    <img  id="myImage"class ="song_img" src="images/LogicAlbumCover.jpg">
+                              </article>
+                              <article>
+                                    <h4>Logic (Feat Eminem)<br>Homicide</h2>
+                              </article>
+                              <article>
+                                    <i class="fas fa-play-circle"></i>
+                              </article>
+                        </section>
+
+                  </section>
+
+
+                  <!--<ul>
+<li>Thunder</li>
+<li>In The End</li>
+<li>Homicide</li>
+</ul>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <section class="musicPlayer">
+
+                        <img id="musicPlayer_img" src="images/LogicAlbumCover.jpg">
+
+                        <section class="currentSongInfo">
+                              <article>
+                                    <i class="fas fa-plus-circle"></i>
+                              </article>
+                              <article >
+                                    <h4>Logic (Feat Eminem)<br>
+                                          Homicide</h4>
+                              </article>
+                              <article>
+                                    <i class="far fa-heart"></i>
+                              </article>
+                        </section>
+
+                        <section class="musicTimeBar">
+                              <article>
+                                    <p id="currentMusicPlayTime"></p>
+                              </article>
+                              <article>
+                                    <div id="myProgress">
+                                          <div id="myBar"></div>
+                                    </div>
+                              </article>
+                              <article>
+                                    <p id="songEndPlayTime"></p>
+                              </article>
+                        </section>
+
+                        <section class="playListAction">
+                              <i class="fas fa-redo-alt"></i>
+                              <i class="fas fa-backward"></i>
+                              <i value="PLAY"
+                                 class="fas fa-play-circle"
+                                 onclick="play()"></i>
+                              <audio id="audio" src="music/Logic%20ft%20Eminem%20-%20Homicide%20%5BLyrics%5D.mp3" ></audio>
+
+                              <i id="pause" value="PAUSE"
+                                 onclick="pause()"
+                                 class="fas fa-pause-circle"></i>
+                              <i class="fas fa-forward"></i>
+                              <i class="fas fa-random"></i>
+                        </section>
+                  </section>
+            </main>
+            <script src="main.js"></script>
+      </body>
+</html>
