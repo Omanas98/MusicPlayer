@@ -1,29 +1,17 @@
-let audio = document.getElementById("audio");
-let songs = ["thunder", "linkin", "homicide"];
-function play(){
-      audio.play();
-}
+$('#people').on('click', 'button', showProfile)
 
-function pause(){
-      audio.pause();
-}
+play
 
-function marked(){
-      let active = on('click','.playlist', play());
-      $('playlist').click(active);
+function showProfile(){
+     let image = $(this).parent().find('#myImage').attr('src')
+     $('#allSongs img').attr('src', image)
 }
 
 
 
 
 
-$( "li" ).eq( 2 ).css( "background-color", "#FF8066" );
 
 
-$( "li" ).eq( -2 ).css( "background-color", "#FF8066" );
 
 
-$( "li" ).eq( 5 ).css( "background-color", "#FF8066" );
-
-
-$( "body" ).find( "div" ).eq( 2 ).addClass( "grey" );
